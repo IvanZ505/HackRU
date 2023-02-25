@@ -1,11 +1,12 @@
 <template>
     <start v-if="!started" @changeStarted="started = true"></start>
-    <div v-else style="color: white;">ASKJDASL</div>
+    <search v-else></search>
 </template>
 
 
 <script>
     import start from './component/Start.vue'
+    import search from './component/Search.vue'
 
     export default {
         data() {
@@ -14,7 +15,8 @@
             }
         },
         components: {
-            start
+            start,
+            search
         }
     }
 </script>

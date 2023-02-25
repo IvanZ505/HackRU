@@ -1,5 +1,5 @@
 <template>
-    <div class="startup">
+    <div class="flex">
         <header id="transit">NJ Transit Data Demo</header> 
 
         <button class="startup-btn" @click="changeStarted()">Enter</button>
@@ -20,6 +20,8 @@
                 this.$emit('changeStarted')
             }
         }
+        
     }
+    
 </script>
 
