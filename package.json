@@ -1,0 +1,16 @@
+{
+  "name": "hackru",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.8.3",
+    "@parcel/transformer-vue": "2.8.3",
+    "motion": "^10.15.5",
+    "parcel": "^2.8.3",
+    "vue": "^3.2.47"
+  }
+}
