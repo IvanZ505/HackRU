@@ -1,8 +1,10 @@
 <template>
-    <div class="startup">
-        <header id="transit">NJ Transit Data Demo</header> 
-
-        <button class="startup-btn" @click="changeStarted()">Enter</button>
+    <div class="startpage">
+        <div class="flex">
+            <header id="transit">NJ Transit Data Demo</header> 
+            <div class="color-square"></div>
+            <button class="startup-btn" @click="changeStarted()">Enter</button>
+        </div>
     </div>
 </template>
 
@@ -20,6 +22,8 @@
                 this.$emit('changeStarted')
             }
         }
+        
     }
+    
 </script>
 
