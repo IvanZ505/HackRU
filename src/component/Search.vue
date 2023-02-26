@@ -1,11 +1,11 @@
 <template>
     <div class="searchpage">
-        <div class="searchpage-heading">Find your Station</div>
+        <div class="searchpage-heading">Find your Route</div>
         <div class="searchpage-heading smaller">Search ID:</div>
         <input type="text" placeholder="Search for a Stop.." class="search" id="stop" @change="fetchSchedule()">
 
         <div class="schedule" id="schedule">
-            <ul class="list-parent">
+            <ul class="list-parent" id="list">
             </ul>
         </div>
 
@@ -19,7 +19,7 @@
 
 <script>
     import { stop } from "vue"
-import tripData from "../sample.json"
+import tripData from "../samplerealdata.json"
 
     export default {
         data() {
@@ -38,6 +38,16 @@ import tripData from "../sample.json"
            fetchSchedule() {
                 const stopHTML = document.getElementById('stop')
                 const num = stopHTML.value
+                const get = Array.from(document.getElementsByClassName('schedule-btn'));
+                get.forEach(element => {
+                element.remove();
+                })
+
+                const get2 = Array.from(document.getElementsByClassName('content'));
+                get2.forEach(element => {
+                element.remove();
+                })
+
                 const searchQuery = async function () {
                     try {
                         const response = tripData

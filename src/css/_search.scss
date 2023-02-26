@@ -1,6 +1,7 @@
 .searchpage {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +19,7 @@
 
 .search {
     width: 40%;
-    height: 5%;
+    height: 5rem;
     text-align: center;
     opacity: 0.4;
     border-radius: 25px;
@@ -70,7 +71,8 @@
   }
 
 footer {
-    position: absolute;
+    margin-top: 4rem;
+    position: relative;
     font-size: 10px;
     bottom: 2%;
 }
