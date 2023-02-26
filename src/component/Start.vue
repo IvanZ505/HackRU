@@ -1,7 +1,8 @@
 <template>
     <div class="startpage">
         <div class="flex">
-            <header id="transit">NJ Transit Data Demo</header> 
+            <header id="transit">
+                NJ Transit Data Demo</header> 
             <div class="background--custom">
                 <canvas id="canvas"></canvas>
             </div>
