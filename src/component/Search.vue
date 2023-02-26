@@ -8,6 +8,12 @@
             <ul class="list-parent">
             </ul>
         </div>
+
+        <footer>Powered by Netlify | 
+            Github Link <a href="https://github.com/IvanZ505/HackRU">Here</a> | 
+            Created For HackRU |
+            Optimized for 16:9 / 19:10 Aspect Ratio
+        </footer>
     </div>
 </template>
 
