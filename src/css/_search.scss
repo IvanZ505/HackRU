@@ -1,0 +1,25 @@
+.searchpage {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchpage-heading {
+    font-size: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.smaller {
+    font-size: 2rem;
+}
+
+.search {
+    width: 40%;
+    height: 5%;
+    text-align: center;
+    opacity: 0.4;
+    border-radius: 25px;
+}

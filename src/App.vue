@@ -1,4 +1,8 @@
 <template>
+    <label class="containing-box">
+        <input type="checkbox" @click="useDarkMode()"> 
+        <span class="slider"></span>
+    </label>
     <start v-if="!started" @changeStarted="started = true"></start>
     <search v-else></search>
 </template>
@@ -11,12 +15,21 @@
     export default {
         data() {
             return {
-                started: false    
+                started: false,
+                darkMode: false,
             }
         },
         components: {
             start,
             search
+        },
+        methods: {
+            useDarkMode() {
+                document.body.classList.toggle("dark-mode");
+            },
+        },
+        created() {
+            console.log('Created!')
         }
     }
 </script>
